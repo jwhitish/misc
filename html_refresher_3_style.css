@@ -1,0 +1,38 @@
+/* . to denote class, # to denote id */
+/* css classes are meant to be reused many times, for instance on titles that should be styled the same. IDs are meant to be unique to one element and override both tag and class styles. Can also chain together selectors: h1.uppercase - would select only h1 that also has the class of uppercase. Can also select items that are nested within other elements: .main-list li {} would only select list items within a list that has class 'main-list'. */
+
+p {
+  font-family: Arial;
+}
+
+h1 {
+  color: maroon;
+}
+
+.title {
+  color: teal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.publish-time {
+  color: gray;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+h2.destination {
+  font-family: cursive;
+}
+
+.description h5 {
+  color: teal;
+}
