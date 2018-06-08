@@ -1,5 +1,6 @@
 /* . to denote class, # to denote id */
 /* css classes are meant to be reused many times, for instance on titles that should be styled the same. IDs are meant to be unique to one element and override both tag and class styles. Can also chain together selectors: h1.uppercase - would select only h1 that also has the class of uppercase. Can also select items that are nested within other elements: .main-list li {} would only select list items within a list that has class 'main-list'. */
+/* !important can be applied to specific attributes instead of full rules. Will override ANY style. Add after an attribute in the style sheet*/
 
 p {
   font-family: Arial;
@@ -35,4 +36,12 @@ h2.destination {
 
 .description h5 {
   color: teal;
+}
+
+h5 {
+  color:rebeccapurple !important;
+}
+
+h5, p {
+  font-family: Georgia;
 }
